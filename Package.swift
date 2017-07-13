@@ -1,9 +1,9 @@
 import PackageDescription
 
 let package = Package(
-  name: "todo-mvc",
+  name: "modswifts",
   dependencies: [
-    .Package(url: "../..",
-             majorVersion: 0, minor: 3)
+    .Package(url: "https://github.com/NozeIO/Noze.io.git",
+             majorVersion: 0, minor: 5)
   ]
 )
