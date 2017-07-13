@@ -17,6 +17,8 @@ What does it do? It automatically invokes `swift build` within a Swift Package M
 project when files in the Sources folder are modified/added/deleted. Improving your
 workflow if you don't use an IDE (no manual calls to `swift build` necessary).
 
+<img src="http://zeezide.com/img/SwiftmonS-Demo.gif" />
+
 ## Requirements
 
 Swift 3.0, or better. macOS. (Sorry, no Linux yet)
