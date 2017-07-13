@@ -68,11 +68,7 @@ final class Daemon {
   }
   
   func killChild() {
-    guard let c = child
-     else {
-      //console.info("got no child to kill ...") // uh oh
-      return
-     }
+    guard let c = child else { return }
     self.child = nil
     
     if !c.kill(xsys.SIGKILL) { // SIGTERM is not good enough
@@ -103,6 +99,9 @@ final class Daemon {
       self.child = spawn(startScript, stdio: [ .Inherit, .Inherit, .Inherit ])
       
       _ = self.child?.onceExit { code, signal in
+        let c = self.child
+        self.child = nil
+        
         guard let code = code else { return }
         console.log(colors.gray("\n<<<"))
         if code == 0 {

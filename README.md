@@ -29,6 +29,10 @@ swift build
 
 sudo cp ./.build/debug/swiftmons /usr/local/bin
 
+### P.S.
+
+This is just a quick hack, won't win a beauty contest :->
+
 ### Who
 
 **Swiftmon/S** is brought to you by
