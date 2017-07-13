@@ -5,6 +5,7 @@
 
 ![Swift3](https://img.shields.io/badge/swift-3-blue.svg)
 ![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
+![Travis](https://api.travis-ci.org/NozeIO/swiftmons.svg?branch=master&style=flat)
 
 Inspired by
 [swiftmon](https://github.com/dimpiax/swiftmon).
