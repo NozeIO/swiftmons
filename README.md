@@ -10,7 +10,8 @@
 Inspired by
 [swiftmon](https://github.com/dimpiax/swiftmon).
 But in Swift.
-Hence the S. Like in *S*uper. Or *S*porty. Or *S*chwifty. Or *S*wifty.
+Hence the S. Like in *S*uper. Or *S*peed. Or *S*porty. Or *S*chwifty. 
+Or *S*wifty.
 Your choice.
 
 What does it do? It automatically invokes `swift build` within a Swift Package Manager
