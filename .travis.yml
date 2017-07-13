@@ -1,0 +1,16 @@
+language:  generic
+
+notifications:
+  slack:
+    rooms:
+      - nozeio:LIFY1Jtkx0FRcLq3u1WliHRZ
+
+matrix:
+    include:
+        - os:   osx
+          osx_image: xcode8.2
+
+script:
+    - export PATH="$HOME/usr/bin:$PATH"
+    - swift build -c release
+    - swift build -c debug
