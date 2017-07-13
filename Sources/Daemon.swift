@@ -96,13 +96,14 @@ final class Daemon {
       
       console.log(colors.gray(">>>\n"))
       
-      self.child = spawn(startScript, stdio: [ .Inherit, .Inherit, .Inherit ])
+      let child = spawn(startScript, stdio: [ .Inherit, .Inherit, .Inherit ])
+      self.child = child
       
-      _ = self.child?.onceExit { code, signal in
-        let c = self.child
-        self.child = nil
+      _ = child.onceExit { code, signal in
+        if child === self.child { self.child = nil }
         
         guard let code = code else { return }
+        
         console.log(colors.gray("\n<<<"))
         if code == 0 {
           console.log("Exited with code: \(colors.green(code))\n\(sep)")
