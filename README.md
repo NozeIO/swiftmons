@@ -38,6 +38,6 @@ This is just a quick hack, won't win a beauty contest :->
 ### Who
 
 **Swiftmon/S** is brought to you by
-[The Always Right Institute](http://www.alwaysrightinstitute.com)
+[The Always Right Institute](http://www.alwaysrightinstitute.com).
 We like feedback, GitHub stars, cool contract work,
 presumably any form of praise you can think of.
